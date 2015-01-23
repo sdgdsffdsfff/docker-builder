@@ -1,0 +1,32 @@
+logging:
+  file: /export/home/jae/dea-docker.log
+  level: debug
+
+builder:
+  port: 8011
+  handlerLogging: true
+  dockerfile_path:	/export/home/builder/dockerfile/
+  dockerfile_remote_path: http://127.0.0.1/packages/dockerfile/
+  build_path: /export/home/builder
+  snapshot_path:	/export/home
+  work_thread_size:	10
+  build_languages:  ["JAVA","PHP","PYTHON","RUBY","NODEJS"]
+  docker_remoute_url: http://127.0.0.1:4243
+  docker_registry: docker.registry.com
+  job_interval_second: 5
+  
+db:
+  host:	127.0.0.1
+  port:	3306
+  user: jae
+  pwd:  m01
+  database: jae
+
+jss:
+  access_key: 3e05c77d08a14045a0bd2ea307eb1ae9
+  secret_Key: 6212b165e5b54c3cb43d20295bf03e7aPIymHVqg
+  buildlog_bucket: jae-docker-build-log
+  app_package_bucket: jae-apppackage
+  host: storage.jcloud.com
+  domain: http://storage.jcloud.com
+  timeout_second: 300
