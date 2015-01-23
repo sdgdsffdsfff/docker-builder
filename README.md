@@ -1,6 +1,6 @@
 builder
 ====
-jae打包系统，根据dockerfile打包成指定的image
+docker打包系统，根据dockerfile打包成指定的image
 
 
 ==============
